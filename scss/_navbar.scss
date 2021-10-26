@@ -1,0 +1,52 @@
+$btn-color: rgb(0, 136, 169, 1);
+$br-color: var(--bs-body-color);
+$brd-radius: 10px;
+.navbar-nav {
+  margin: 0 auto;
+
+  .nav__item {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .nav__link {
+    color: #ffffff !important;
+  }
+}
+.nav__item:hover {
+  background-color: $btn-color;
+  border-radius: $brd-radius;
+}
+.dropdown-menu {
+  background-color: $br-color;
+  color: #ffffff;
+}
+
+.dropdown-item {
+  color: #ffffff;
+}
+.dropdown-item:hover {
+  background-color: $btn-color;
+  color: #ffffff;
+}
+
+.fas {
+  color: white;
+  align-items: center;
+  justify-content: center;
+  display: inline-block;
+  padding: 0.375rem 0.75rem;
+  margin-left: 1rem;
+  border-radius: $brd-radius;
+}
+
+.carrito :hover {
+  background-color: rgb(105, 105, 105);
+}
+
+.carrito_i {
+  scale: 1.1;
+  margin-top: 2px;
+}

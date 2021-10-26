@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Armate tu spot para compartir momentos con familia y amigos. Tenemos fogoneros,cuchillos, vasos termicos y mas. Hace tu pedido y pagalo online."
+    />
+    <meta
+      name="keywords"
+      content="FOGONEROS, CUCHILLOS, VASOS TERMICOS, CREA TU SPOT, SPOT, CONSERVADORAS"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../../../../css/style.css" />
+    <link rel="icon" href="../../../../assets/logo_cts.ico" />
+    <title>CREA TU SPOT | Fogoneros</title>
+  </head>
+  <body>
+    <!--NAV BAR-->
+
+    <header>
+      <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img
+              src="../../../../assets/logo_cts.png"
+              alt=""
+              width="30"
+              height="32"
+            />
+          </a>
+
+          <a class="navbar-brand" href="../../../index.html">#CREA TU SPOT</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="d-flex navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav__item">
+                <a
+                  class="nav__link active"
+                  aria-current="page"
+                  href="../../../../index.html"
+                  >Inicio</a
+                >
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="../../nosotros/">Sobre Nosotros</a>
+              </li>
+              <li class="nav__item dropdown">
+                <a
+                  class="nav__link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Productoos
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li>
+                    <a class="dropdown-item" href="./index.html">Fogoneros</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Vasos y botellas</a>
+                  </li>
+                  <li><a class="dropdown-item" href="#">Cubiertos</a></li>
+                  <li><a class="dropdown-item" href="#">Conservadoras</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Accesorios</a>
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="../../productos/index.html"
+                      >Todos los productos</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="../../contacto/index.html"
+                  >Contacto</a
+                >
+              </li>
+            </ul>
+            <div class="d-flex">
+              <div class="btn-group">
+                <a
+                  href="../../registro/index.html"
+                  class="btn active"
+                  aria-current="page"
+                  >Registrarme</a
+                >
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#reg-modal"
+                >
+                  Log in
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="reg-modal"
+      tabindex="-1"
+      aria-labelledby="modal-tittle"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modal-title">Log in</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="container mt-3">
+              <div class="mb-3 mt-3">
+                <label
+                  for="exampleFormControlInput1"
+                  class="form-label float-start"
+                  >Email</label
+                >
+                <input
+                  type="email"
+                  class="form-control"
+                  id="exampleFormControlInput1"
+                  placeholder="name@example.com"
+                />
+              </div>
+              <div class="mb-3 mt-3">
+                <label
+                  for="exampleFormControlInput1"
+                  class="form-label float-start"
+                  >Contrasena</label
+                >
+                <input
+                  type="password"
+                  class="form-control"
+                  id="exampleFormControlInput1"
+                  placeholder="123456abc"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Cancelar
+            </button>
+            <button type="button" class="btn btn-primary">Entrar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- PRESENTACION -->
+
+    <!---    BODY LISTA DE PRODUCTOS  
+    CAMBIAR IMAGENES, TEXTOS COLORES BORDES.
+  COPIAR TODO DEL CSS PROPIO ESCRITO DESDE CERO   -->
+    <main>
+      <section class="py-5 text-center container section">
+        <div class="container text-center">
+          <section class="row mt-5">
+            <div class="container">
+              <fieldset class="card_unica">
+                <div
+                  class="
+                    product_img
+                    col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6
+                  "
+                >
+                  <div
+                    id="carouselExampleIndicators"
+                    class="carousel slide"
+                    data-bs-ride="carousel"
+                  >
+                    <div class="carousel-indicators">
+                      <button
+                        type="button"
+                        data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide-to="0"
+                        class="active"
+                        aria-current="true"
+                        aria-label="Slide 1"
+                      ></button>
+                      <button
+                        type="button"
+                        data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide-to="1"
+                        aria-label="Slide 2"
+                      ></button>
+                      <button
+                        type="button"
+                        data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide-to="2"
+                        aria-label="Slide 3"
+                      ></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img
+                          src="../../../../assets/fogoneros120/120_1.jpeg"
+                          class="d-block w-100 h-50"
+                          alt="..."
+                        />
+                      </div>
+                      <div class="carousel-item">
+                        <img
+                          src="../../../../assets/fogoneros120/120_2.jpeg"
+                          class="d-block w-100 h-50"
+                          alt="..."
+                        />
+                      </div>
+                      <div class="carousel-item">
+                        <img
+                          src="../../../../assets/fogoneros120/120_3.jpeg"
+                          class="d-block w-100 h-50"
+                          alt="..."
+                        />
+                      </div>
+                    </div>
+                    <button
+                      class="carousel-control-prev"
+                      type="button"
+                      data-bs-target="#carouselExampleIndicators"
+                      data-bs-slide="prev"
+                    >
+                      <span
+                        class="carousel-control-prev-icon"
+                        aria-hidden="true"
+                      ></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button
+                      class="carousel-control-next"
+                      type="button"
+                      data-bs-target="#carouselExampleIndicators"
+                      data-bs-slide="next"
+                    >
+                      <span
+                        class="carousel-control-next-icon"
+                        aria-hidden="true"
+                      ></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+                </div>
+                <div
+                  class="
+                    product_info
+                    col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6
+                  "
+                >
+                  <div class="info">
+                    <h1 class="card-title">Fogonero 120</h1>
+                    <h4 class="price mt-5">$52.000</h4>
+                    <p class="payment">6 cuotas sin interes de $8.666,87</p>
+                    <h5 class="mt-5">FOGONERO CREATUSPOT 120</h5>
+                    <p>
+                      Asador fogonero con patas, incluye su media parrilla
+                      desmontable.<br />
+                      <br />
+                      Cuenta con soportes para acoplar accesorios: plancheta
+                      circular, parrilla circular o asador cruz. <br /><br />
+                      Disponible en terminación acero virgen o pintados color
+                      negro mate. <br />
+                      <br />
+                      ** MEDIDAS: <br />
+                      Diámetro: 1,2m - Profundidad: 20cm - Altura total: 60cm -
+                      Espesor: 32mm <br /><br />** PARRILLA: opción media
+                      parrilla desmontable de 50 cm ó parrilla mixta con
+                      plancheta. <br /><br />
+                      ** OPCIONALES: Asador Cruz, plancheta circular ó parrilla
+                      circular. <br />
+                      <br />
+                      CONSULTAR PRECIOS POR LOS ACCESORIOS OPCIONALES. HACEMOS
+                      ENVÍOS A TODO EL PAÍS, CONSULTAR PRECIOS SEGÚN LOCALIDAD Y
+                      PROVINCIA.
+                    </p>
+
+                    <a
+                      href="https://creatuspot.mitiendanube.com/fogoneros/"
+                      class="btn btn-buy btn-primary mt-5"
+                      target="_blank"
+                      >Comprar</a
+                    >
+                  </div>
+                </div>
+              </fieldset>
+            </div>
+          </section>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+
+    <footer
+      class="
+        d-flex
+        flex-wrap
+        justify-content-between
+        align-items-center
+        py-3
+        my-4
+      "
+    >
+      <div class="col-md-4 d-flex align-items-center">
+        <a
+          href="/"
+          class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1"
+        >
+          <svg class="bi" width="30" height="24">
+            <use xlink:href="#bootstrap"></use>
+          </svg>
+        </a>
+        <span class="text-muted">© 2021 Company, Inc</span>
+      </div>
+
+      <ul class="nav col-md-4 justify-content-end list-unstyled d-flex me-5">
+        <li class="ms-3">
+          <a class="text-muted" href="#"><i class="fab fa-twitter"></i> </a>
+        </li>
+        <li class="ms-3">
+          <a class="text-muted" href="#"><i class="fab fa-instagram"></i> </a>
+        </li>
+        <li class="ms-3">
+          <a class="text-muted" href="#"><i class="fab fa-facebook"></i> </a>
+        </li>
+      </ul>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

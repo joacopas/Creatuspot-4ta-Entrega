@@ -1,0 +1,9 @@
+$btn-color: rgb(0, 136, 169, 1);
+$br-color: var(--bs-body-color);
+$brd-radius: 10px;
+
+@each $i in control, select {
+  .form-#{$i} {
+    border: 1px solid $br-color;
+  }
+}
