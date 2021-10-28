@@ -11184,6 +11184,10 @@ a {
   padding-top: 3rem;
 }
 
+.row {
+  margin-top: 0;
+}
+
 .navbar-nav {
   margin: 0 auto;
 }
@@ -11330,7 +11334,7 @@ fieldset {
 
 .nosotros {
   line-height: 2.5rem;
-  letter-spacing: 0.3rem;
+  letter-spacing: 0.2rem;
   font-size: 1.2rem;
 }
 
@@ -11349,8 +11353,8 @@ fieldset {
   background-color: dimgray;
 }
 
-.container__nosotros {
-  height: 100vh;
+.footer_style {
+  position: fixed;
 }
 
 .error__title {
