@@ -46,50 +46,39 @@ $brd-radius: 10px;
   color: black;
 }
 
-fieldset {
-  border: 1px solid rgb(105, 105, 105);
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-}
-
 .product_img {
-  display: flex;
+  display: inline-block;
   padding: 1rem;
 
   .img-product {
     width: 100%;
-    height: 600px !important;
+
     object-fit: cover;
   }
 }
 
 .product_info {
-  display: flex;
+  display: inline-block;
   padding: 1rem;
   align-items: flex-start;
   text-align: left;
   color: white;
 }
 
-.card_unica {
-  padding: 10px;
-  background-color: rgb(105, 105, 105);
-
-  box-shadow: 10px 14px 15px 3px rgb(136, 134, 134);
+.btn-buy {
+  border: none;
   border-radius: $brd-radius;
+  background-color: $btn-color;
+  color: #ffffff;
+  align-items: flex-end !important;
+}
 
-  .btn-buy {
-    border: none;
-    border-radius: $brd-radius;
-    background-color: $btn-color;
-    color: #ffffff;
-    align-items: flex-end !important;
-  }
+.btn-buy:hover {
+  background-color: $br-color;
+  border: none;
+  color: #ffffff;
+}
 
-  .btn-buy:hover {
-    background-color: $br-color;
-    border: none;
-    color: #ffffff;
-  }
+.carousel {
+  margin: 2rem;
 }
