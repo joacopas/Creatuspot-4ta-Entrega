@@ -11344,6 +11344,10 @@ a {
   background-color: dimgray;
 }
 
+.container__nosotros {
+  height: 100%;
+}
+
 .footer_style {
   position: fixed;
 }
